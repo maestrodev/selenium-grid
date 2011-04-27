@@ -50,7 +50,7 @@
       <groupId>org.mockito</groupId>
       <artifactId>mockito-all</artifactId>
       <scope>test</scope>
-    </dependency>      
+    </dependency>
   </dependencies>
 
   <dependencyManagement>
@@ -63,7 +63,7 @@
       <dependency>
         <groupId>commons-logging</groupId>
         <artifactId>commons-logging</artifactId>
-        <version>1.1.1</version>
+        <version>1.0.4</version>
       </dependency>
       <dependency>
         <groupId>log4j</groupId>
@@ -73,7 +73,13 @@
       <dependency>
         <groupId>commons-httpclient</groupId>
         <artifactId>commons-httpclient</artifactId>
-        <version>3.1</version>
+        <version>3.0.1</version>
+        <exclusions>
+          <exclusion>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.seleniumhq.selenium.server</groupId>
@@ -99,12 +105,12 @@
       <dependency>
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
-        <version>1.4</version>
+        <version>1.3</version>
       </dependency>
       <dependency>
         <groupId>org.mortbay.jetty</groupId>
         <artifactId>jetty</artifactId>
-        <version>6.1.24</version>
+        <version>6.0.2</version>
       </dependency>
       <dependency>
         <groupId>org.freemarker</groupId>
@@ -135,7 +141,7 @@
         <groupId>org.mockito</groupId>
         <artifactId>mockito-all</artifactId>
         <version>1.8.4</version>
-      </dependency>      
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
