@@ -17,6 +17,19 @@
     <module>tools</module>
   </modules>
 
+  <distributionManagement>
+    <repository>
+      <id>${repo.id}</id>
+      <name>Maven repository</name>
+      <url>${repo}</url>
+    </repository>
+    <snapshotRepository>
+      <id>${repo.id}</id>
+      <name>Maven repository</name>
+      <url>${repo}</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <dependencies>
     <dependency>
       <groupId>commons-logging</groupId>
