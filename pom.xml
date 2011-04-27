@@ -165,7 +165,7 @@
       <resource>
         <directory>${project.build.sourceDirectory}</directory>
         <excludes>
-          <exclude>*.java</exclude>
+          <exclude>**/*.java</exclude>
         </excludes>
       </resource>
     </resources>
@@ -173,7 +173,7 @@
       <testResource>
         <directory>${project.build.testSourceDirectory}</directory>
         <excludes>
-          <exclude>*.java</exclude>
+          <exclude>**/*.java</exclude>
         </excludes>
       </testResource>
     </testResources>
